@@ -2,6 +2,7 @@
 ## Introduction
 ![Map](http://ai.berkeley.edu/projects/release/contest/v1/002/capture_the_flag.png)
 The game is a multi-player capture-the-flag variant of Pacman, where AI agents control both Pacman and ghosts in coordinated team-based strategies. Our team will try to eat the food on the far side of the map, while defending the food on our home side. For more info, click [here](http://ai.berkeley.edu/contest.html)
+
 Our team (Level-256-UniMel18) won Finalist Award at [Year 2018 Sem 2 Pacman Capture the Flag Inter University Contest](https://sites.google.com/view/pacman-capture-hall-fame/2018)
 ## AI Design
 #### Techniques used
@@ -64,3 +65,5 @@ When our Pacman's nearest food is inside a blocked area that has only one entry,
 ![Demo2](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/around.gif)
 #### Trapping Enemy (Our AI Agent: Red Ghost)
 ![Demo3](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/trap.gif)
+
+## Thank You
