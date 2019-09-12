@@ -2,6 +2,7 @@
 ## Introduction
 ![Map](http://ai.berkeley.edu/projects/release/contest/v1/002/capture_the_flag.png)
 The game is a multi-player capture-the-flag variant of Pacman, where AI agents control both Pacman and ghosts in coordinated team-based strategies. Our team will try to eat the food on the far side of the map, while defending the food on our home side. For more info, click [here](http://ai.berkeley.edu/contest.html)
+Our team (Level-256-UniMel18) won Finalist Award at [Year 2018 Sem 2 Pacman Capture the Flag Inter University Contest](https://sites.google.com/view/pacman-capture-hall-fame/2018)
 ## AI Design
 #### Techniques used
 1. Heuristic Search
@@ -10,7 +11,7 @@ The game is a multi-player capture-the-flag variant of Pacman, where AI agents c
 1. one offensive agent
 2. one defensive agent 
 ## Heuristic Search
-####  Heuristic Search is the core technique for our solution
+#### Heuristic Search is the core technique for our solution
 Heuristic Search is an AI technique that use heuristic function to generate information based on the current state and the ranking for each actions of a given state
 ## Offensive Agent
 ### Feature-Weight Model
@@ -22,22 +23,22 @@ Our team leverages multiple heuristic functions to generate output as feature, a
 * distanceToHome: Distance to the nearest point within our camp
 * distanceToStart: Distance to starting point
 ### Two Modes
-1. Eating mode
-⋅⋅* Eating food as much as possible
-⋅⋅* Trying to eat the capsule and become more aggressive while opponent’s ghosts are scared 
-2. Going-home mode
-⋅⋅* Pacman has eaten a given amount of food and starts to go home in order to make sure the scores are firmly obtained
-⋅⋅* The game is coming to the end (steps left are less than a given amount). Pacman starts to go home in order to boost the final score 
+#### Eating mode
+* Eating food as much as possible
+* Trying to eat the capsule and become more aggressive while opponent’s ghosts are scared 
+#### Going-home mode
+* Pacman has eaten a given amount of food and starts to go home in order to make sure the scores are firmly obtained
+* The game is coming to the end (steps left are less than a given amount). Pacman starts to go home in order to boost the final score 
 ### Decision Tree
 ![DecisionTree1](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/decisionTree.png)
 ## Defensive Agent
 ### Three Modes
-1. Patrol mode
-⋅⋅* If the agent detects some of our food are eaten, the agent will go to the position of eaten food to search for enemy
-2. Chasing mode
-⋅⋅* If the agent detects the incoming enemy, the agent will hunt the invading enemy
-3. Offensive mode
-⋅⋅* If no enemy in sight and no food is being eaten, eat the food at the other side
+#### Patrol mode
+* If the agent detects some of our food are eaten, the agent will go to the position of eaten food to search for enemy
+#### Chasing mode
+* If the agent detects the incoming enemy, the agent will hunt the invading enemy
+#### Offensive mode
+* If no enemy in sight and no food is being eaten, eat the food at the other side
 ### Decision Tree
 ![DecisionTree2](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/decisionTreeD.png)
 ## Monte Carlo Tree Search
