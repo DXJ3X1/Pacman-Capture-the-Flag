@@ -15,28 +15,28 @@ Heuristic Search is an AI technique that use heuristic function to generate info
 ## Offensive Agent
 ### Feature-Weight Model
 Our team leverages multiple heuristic functions to generate output as feature, and calculate overall ranking for the each actions
-#### Features
-⋅⋅* isPacman: whether the agent has become Pacman
-⋅⋅* ghostDistance: Distance to nearest ghost
-⋅⋅* distanceToAvailableFood : Distance to nearest food, with no ghost on the way
-⋅⋅* distanceToHome: Distance to the nearest point within our camp
-⋅⋅* distanceToStart: Distance to starting point
+### Features
+* isPacman: whether the agent has become Pacman
+* ghostDistance: Distance to nearest ghost
+* distanceToAvailableFood : Distance to nearest food, with no ghost on the way
+* distanceToHome: Distance to the nearest point within our camp
+* distanceToStart: Distance to starting point
 ### Two Modes
-#### Eating mode
+1. Eating mode
 ⋅⋅* Eating food as much as possible
 ⋅⋅* Trying to eat the capsule and become more aggressive while opponent’s ghosts are scared 
-#### Going-home mode
+2. Going-home mode
 ⋅⋅* Pacman has eaten a given amount of food and starts to go home in order to make sure the scores are firmly obtained
 ⋅⋅* The game is coming to the end (steps left are less than a given amount). Pacman starts to go home in order to boost the final score 
 ### Decision Tree
 ![DecisionTree1](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/decisionTree.png)
 ## Defensive Agent
 ### Three Modes
-#### Patrol mode
+1. Patrol mode
 ⋅⋅* If the agent detects some of our food are eaten, the agent will go to the position of eaten food to search for enemy
-#### Chasing mode
+2. Chasing mode
 ⋅⋅* If the agent detects the incoming enemy, the agent will hunt the invading enemy
-#### Offensive mode
+3. Offensive mode
 ⋅⋅* If no enemy in sight and no food is being eaten, eat the food at the other side
 ### Decision Tree
 ![DecisionTree2](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/decisionTreeD.png)
@@ -46,9 +46,9 @@ Monte Carlo Tree Search allows us to simulate the future game states after takin
 #### This serves as our solution to “Food in Block Area” situation
 When our Pacman's nearest food is inside a blocked area that has only one entry, we use simulation to see how many steps it would take for our Pacman to enter the blocked area, eat a certain amount of food and leave. Then the Pacman can decide how many food it would eat in the blocked area, without being blocked or eaten by ghosts. We simulated maximum 20 steps since a blocked area that takes more than 20 steps to walk around is dangerous enough for the Pacman to decide not to enter
 ## Challenges
-..* The provided function getmazedistance(pos1, pos2) only returns the length of the shortest path from pos1 to pos2, ignoring all other paths. However, in order to avoid enemies, our Pacman needs to take a longer path to get to its target. The goAround() function is designed to solve the problem by conducting a BFS from the current position to find a middle point whose shortest path to the target is clear
+* The provided function getmazedistance(pos1, pos2) only returns the length of the shortest path from pos1 to pos2, ignoring all other paths. However, in order to avoid enemies, our Pacman needs to take a longer path to get to its target. The goAround() function is designed to solve the problem by conducting a BFS from the current position to find a middle point whose shortest path to the target is clear
 ![goAround](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/goAround.png)
-..* Our defensive agent used to waste time chasing the opponent’s defensive agent that never eats food. To solve the problem, we keep a record of indexes of the opponent’s agents who has ever carried food. So that our defensive agent would only spend time defending those agents that would offend
+* Our defensive agent used to waste time chasing the opponent’s defensive agent that never eats food. To solve the problem, we keep a record of indexes of the opponent’s agents who has ever carried food. So that our defensive agent would only spend time defending those agents that would offend
 ## Further Improvements
 1. Defensive agent can perform better if it could predict the food the invading Pacman is going after and try to get in the way
 2. Eat capsules and opponents more wisely to maximize scare time
