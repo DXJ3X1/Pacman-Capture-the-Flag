@@ -1,2 +1,20 @@
-# Pacman-Capture-the-Flag
-Pacman Capture the Flag AI Strategy Presentation
+# Pacman Capture the Flag AI Strategy Presentation
+![Slide1](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide1.jpeg)
+![Slide2](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide2.jpeg)
+![Slide3](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide3.jpeg)
+![Slide4](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide4.jpeg)
+![Slide5](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide5.jpeg)
+![Slide6](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide6.jpeg)
+![Slide7](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide7.jpeg)
+![Slide8](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide8.jpeg)
+![Slide9](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide9.jpeg)
+![Slide10](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide10.jpeg)
+![Slide11](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide11.jpeg)
+![Slide12](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide12.jpeg)
+### Demo 1 - Blocked Area (Our AI Agent: Blue Pacman)
+![Demo1](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/eat.gif)
+### Demo 2 - Bypassing Ghost (Our AI Agent: Blue Pacman)
+![Demo2](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/around.gif)
+### Demo 3 - Trapping Enemy (Our AI Agent: Red Ghost)
+![Demo3](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/trap.gif)
+![Slide18](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/img/Slide18.jpeg)
