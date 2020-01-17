@@ -65,5 +65,3 @@ When our Pacman's nearest food is inside a blocked area that has only one entry,
 ![Demo2](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/around.gif)
 #### Trapping Enemy (Our AI Agent: Red Ghost)
 ![Demo3](https://raw.githubusercontent.com/DXJ3X1/Pacman-Capture-the-Flag/master/gif/trap.gif)
-
-## Thank You
